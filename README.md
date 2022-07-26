@@ -1,6 +1,6 @@
 # DNS Record List Generator
 
-Small JavaScript snippet written for automatically traversing the AWS Route 53 DNS Record list and generating both a CSV and a basic array containing all of the records across the 15+ pages that are in the account.
+Small JavaScript snippet written for automatically traversing the AWS Route 53 DNS Record list and generating a CSV containing all of the records across however many pages that are in the hosted zone.
 
 ## How to Use
 
