@@ -2,6 +2,14 @@
 
 Small JavaScript snippet written for automatically traversing the AWS Route 53 DNS Record list and generating a CSV containing all of the records across however many pages that are in the hosted zone.
 
+## How it Works
+
+1. Initializes CSV string
+2. Collects the headers into first row
+3. For each table row, generate CSV record and add to CSV string
+4. Use JS to automatically click the right arrow button to proceed to the next table page. The default page length for each page is 100 records.
+5. Repeat steps 3 and 4 for `numTablePages` times, where `numTablePages` is an argument you provide indicating the number of pages in your table.
+
 ## How to Use
 
 1. Open the DNS record list in Route 53
